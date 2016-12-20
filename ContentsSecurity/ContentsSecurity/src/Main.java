@@ -43,31 +43,6 @@ public class Main {
 
         String[][] result = chugaku.getAdmissionResult(admissionMatrix); // 16
 
-        printMatrix(grade);
-        printMatrix(result);
-    }
-
-    public static void printMatrix(double[][] matrix) {
-        int row = matrix.length;
-        int col = matrix[0].length;
-
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < col; j++) {
-                System.out.print(matrix[i][j]);
-            }
-            System.out.print("\n");
-        }
-    }
-
-    public static void printMatrix(String[][] matrix) {
-        int row = matrix.length;
-        int col = matrix[0].length;
-
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < col; j++) {
-                System.out.print(matrix[i][j]);
-            }
-            System.out.print("\n");
-        }
+        Matrix2D.printMatrix(result);
     }
 }
